@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "nombre": "Alexander González",
+        "edad": 34,
+        "correoElectronico":"alexandergonzalezsaavedra@gmail.com",
+        "contraseña": "123",
+        "intereses": "Deportes, Vehiculos"
+    },
+    {
+        "id": 2,
+        "nombre": "Hannah",
+        "edad": 8,
+        "correoElectronico":"hannah@gmail.com",
+        "contraseña": "321",
+        "intereses": "Comida, Juguetes"
+    }
+]
