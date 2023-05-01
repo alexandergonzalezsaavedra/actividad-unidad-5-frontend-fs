@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -104,26 +104,93 @@
     <section class="producto">
         <div class="container py-5">
             <div class="row">
-                <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div id="comentariosUsuarios"></div>
+                <div class="col-12 col-sm-8">
+                    <h1 class="titulos mb-5">
+                        <span class="texto-azul">Arnés Para Perro</span>
+                        <hr>
+                    </h1>
+                    <div class="row mb-4">
+                        <div class="col-3 col-sm-2 menu-imagenes-producto">
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item">
+                                    <picture class="nav-link rounded-0 active" data-bs-toggle="pill" href="#collar-uno">
+                                        <img src="./img/productos-mascotas/collar/collar-uno.jpg" alt="alexander">
+                                    </picture>
+                                </li>
+                                <li class="nav-item">
+                                    <picture class="nav-link rounded-0" data-bs-toggle="pill" href="#collar-azul">
+                                        <img src="./img/productos-mascotas/collar/collar-azul.webp" alt="alexander">
+                                    </picture>
+                                </li>
+                                <li class="nav-item">
+                                    <picture class="nav-link rounded-0" data-bs-toggle="pill" href="#collar-morado">
+                                        <img src="./img/productos-mascotas/collar/collar-morado.webp" alt="alexander">
+                                    </picture>
+                                </li>
+                                <li class="nav-item">
+
+                                    <picture class="nav-link rounded-0" data-bs-toggle="pill" href="#collar-rosado">
+                                        <img src="./img/productos-mascotas/collar/collar-rosado.webp" alt="alexander">
+                                    </picture>
+
+                                </li>
+                                <li class="nav-item">
+                                    <picture class="nav-link rounded-0" data-bs-toggle="pill" href="#collar-rojo">
+                                        <img src="./img/productos-mascotas/collar/collar-rojo.webp" alt="alexander">
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-9 col-sm-10">
+                            <div class="tab-content">
+                                <div id="collar-uno" class="container tab-pane active"><br>
+                                    <picture>
+                                        <img class="w-100" src="./img/productos-mascotas/collar/collar-uno.jpg"
+                                            alt="alexander">
+                                    </picture>
+                                </div>
+                                <div id="collar-azul" class="container tab-pane fade"><br>
+                                    <picture>
+                                        <img class="w-100" src="./img/productos-mascotas/collar/collar-azul.webp"
+                                            alt="alexander">
+                                    </picture>
+                                </div>
+                                <div id="collar-morado" class="container tab-pane fade"><br>
+                                    <picture>
+                                        <img class="w-100" src="./img/productos-mascotas/collar/collar-morado.webp"
+                                            alt="alexander">
+                                    </picture>
+                                </div>
+                                <div id="collar-rosado" class="container tab-pane fade"><br>
+                                    <picture>
+                                        <img class="w-100" src="./img/productos-mascotas/collar/collar-rosado.webp"
+                                            alt="alexander">
+                                    </picture>
+                                </div>
+                                <div id="collar-rojo" class="container tab-pane fade"><br>
+                                    <picture>
+                                        <img class="w-100" src="./img/productos-mascotas/collar/collar-rojo.webp"
+                                            alt="alexander">
+                                    </picture>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="card border-0 rounded-0 detalle-producto">
+                <div class="col-12 col-sm-4">
+                    <div class="card border-0 rounded-0 detalle-producto mt-5">
                         <div class="card-body">
                             <h3 class="subtitulos">
                                 Detalles del producto
                             </h3>
-                            <h1 class="titulos">
-                                Nombre producto
-                            </h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus natus harum saepe
-                                tempora labore. Eligendi, minima. Consectetur amet, ea facere dicta minus, aut quae
-                                nobis totam, eum vitae illum nesciunt.
+                                Arnés duradero que es ideal para perros con fuertes hábitos de tracción. Tiene un diseño
+                                de seguridad que no supone una carga para el cuello y admite una amplia gama de razas de
+                                perros, desde perros pequeños hasta perros grandes. El tamaño XS solo tiene un anillo de
+                                plomo y no tiene un asa para evitar que se salga.
+                            </p>
+                            <p>
+                                Colores sujetos a disponibilidad en tienda, el color llega de manera aleatoria.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -140,6 +207,53 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="card border-0 rounded-0 detalle-producto">
+                        <div class="card-body">
+                            <form id="agregarAlCarrito">
+                                <p class="my-0">
+                                    Digite la cantidad:
+                                </p>
+                                <input class="form-control" type="number">
+                                <br>
+                                <p class="my-0">
+                                    Seleccione el color:
+                                </p>
+                                <select class="form-select">
+                                    <option value="">Seleccione un color</option>
+                                    <option value="azul">Azul</option>
+                                    <option value="morado">Morado</option>
+                                    <option value="rosado">Rosado</option>
+                                    <option value="rojo">Rojo</option>
+                                </select>
+                                <br>
+                                <button type="submit" class="btn btn-danger w-100">
+                                    <i class="fa-sharp fa-solid fa-tag"></i> Comprar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comentarios">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-12 col-sm-8">
+                    <p>
+                        Conoce las opiniones sobre nuestro producto.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="comentariosUsuarios"></div>
+                            <div class="mt-4 mb-5">
+                                <h3 class="titulos">Ultimos comentarios</h3>
+                            </div>
+                            <div id="ultimosComentariosUsuarios"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
                     <div class="card formulario-comentarios p-5 rounded-0 border-0">
                         <h3 class="titulos">
                             Tu opinión es importante
@@ -186,7 +300,7 @@
                                 <div class="form-check">
                                     <label for="calificacionCinco">5</label>
                                     <input class="form-check-input" type="radio" name="dataCalificacion"
-                                        id="calificacionCinco" value="5" checked>
+                                        id="calificacionCinco" value="5">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-outline-danger mt-4 w-100">
@@ -197,39 +311,71 @@
                 </div>
             </div>
         </div>
-        <!-- Template comentarios -->
-        <template id="templateComentariosProducto">
-            <div class='row'>
-                <div class='col-sm-4'>
-                    <p class="nombreUsuario">
-                        <strong>
-                            Usuario:
-                        </strong>
-                        <br>
-                        <span></span>
-                    </p>
-                </div>
-                <div class='col-sm-4'>
-                    <p class="comentarioUsuario">
-                        <strong>
-                            Comentario:
-                        </strong>
-                        <br>
-                        <span></span>
-                    </p>
-                </div>
-                <div class='col-sm-4'>
-                    <p class="calificacionUsuario">
-                        <strong>
-                            calificacion:
-                        </strong>
-                        <br>
-                        <span></span>
-                    </p>
+    </section>
+    <!-- Template comentarios -->
+    <template id="templateComentariosProducto">
+        <div class="row mb-4">
+            <div class="col-2 col-sm-1 px-0">
+                <div class="msj">
+                    <i class="fa-solid fa-message"></i>
                 </div>
             </div>
-        </template>
-    </section>
+            <div class="col-8 col-sm-10">
+                <div class="mensaje">
+                    <div class="d-flex justify-content-between">
+                        <div class="nombreUsuario">
+                            <span></span>
+                        </div>
+                        <div class="fechaComentario">
+                            <i class="fa-solid fa-calendar-days"></i> <span></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="comentarioUsuario">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span>
+                        </span>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <div class="calificacionUsuario">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!--template ultimos comentarios-->
+    <template id="templateUltimosComentariosProducto">
+        <div class="row mb-4">
+            <div class="col-2 col-sm-1 px-0">
+                <div class="msj">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+            </div>
+            <div class="col-8 col-sm-10">
+                <div class="mensaje">
+                    <div class="d-flex justify-content-between">
+                        <div class="nombreUsuario">
+                            <span></span>
+                        </div>
+                        <div class="fechaComentario">
+                            <i class="fa-solid fa-calendar-days"></i> <span></span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="comentarioUsuario">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span>
+                        </span>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <div class="calificacionUsuario">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
     <script src="./js/jquery/jquery.min.3.6.4.js"></script>
     <script src="./js/bootstrap/bootstrap.js"></script>
     <script src="./js/main/main.js"></script>
