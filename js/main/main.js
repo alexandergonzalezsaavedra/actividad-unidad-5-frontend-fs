@@ -155,7 +155,15 @@ pintarCalificacion()
 
 // agregar al carrito
 
-
+let infoCompra = []
 formularioAgregarAlCarrito.addEventListener("click", (e) => {
    e.preventDefault()
+   let dataForm = new FormData(formularioAgregarAlCarrito)
+   let resData = {
+      "id": 1,
+      "nombreProducto": "Arnes",
+      "cantidad": dataForm.get("cantidad"),
+      "color": dataForm.get("color")
+   }
+   console.log(resData)
 })
